@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0B67F941DFBE12E00892C47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67F931DFBE12E00892C47 /* main.m */; };
+		A0B67F971DFBE12E00892C47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67F961DFBE12E00892C47 /* AppDelegate.m */; };
+		A0B67F9A1DFBE12E00892C47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67F991DFBE12E00892C47 /* ViewController.m */; };
+		A0B67F9D1DFBE12E00892C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B67F9B1DFBE12E00892C47 /* Main.storyboard */; };
+		A0B67F9F1DFBE12E00892C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B67F9E1DFBE12E00892C47 /* Assets.xcassets */; };
+		A0B67FA21DFBE12E00892C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B67FA01DFBE12E00892C47 /* LaunchScreen.storyboard */; };
+		A0B67FAD1DFBE12E00892C47 /* Arbieye_test2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67FAC1DFBE12E00892C47 /* Arbieye_test2Tests.m */; };
+		A0B67FB81DFBE12E00892C47 /* Arbieye_test2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67FB71DFBE12E00892C47 /* Arbieye_test2UITests.m */; };
+		A0B67FC71DFBE20100892C47 /* BebopVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67FC61DFBE20100892C47 /* BebopVideoView.m */; };
+		A0B67FCA1DFBE22500892C47 /* DeviceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67FC91DFBE22500892C47 /* DeviceListVC.m */; };
+		A0B67FCF1DFBE29F00892C47 /* DroneDiscoverer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67FCE1DFBE29F00892C47 /* DroneDiscoverer.m */; };
+		A0B67FD21DFBE2ED00892C47 /* BebopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67FD11DFBE2ED00892C47 /* BebopVC.m */; };
+		A0B67FD61DFBE5AB00892C47 /* BebopDrone.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67FD51DFBE5AB00892C47 /* BebopDrone.m */; };
+		A0B67FD91DFBE62900892C47 /* SDCardModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B67FD81DFBE62900892C47 /* SDCardModule.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0B67FA91DFBE12E00892C47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B67F871DFBE12E00892C47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B67F8E1DFBE12E00892C47;
+			remoteInfo = "Arbieye-test2";
+		};
+		A0B67FB41DFBE12E00892C47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B67F871DFBE12E00892C47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B67F8E1DFBE12E00892C47;
+			remoteInfo = "Arbieye-test2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0B67F8F1DFBE12E00892C47 /* Arbieye-test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arbieye-test2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B67F931DFBE12E00892C47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0B67F951DFBE12E00892C47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0B67F961DFBE12E00892C47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0B67F981DFBE12E00892C47 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0B67F991DFBE12E00892C47 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0B67F9C1DFBE12E00892C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0B67F9E1DFBE12E00892C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0B67FA11DFBE12E00892C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0B67FA31DFBE12E00892C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B67FA81DFBE12E00892C47 /* Arbieye-test2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arbieye-test2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B67FAC1DFBE12E00892C47 /* Arbieye_test2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arbieye_test2Tests.m; sourceTree = "<group>"; };
+		A0B67FAE1DFBE12E00892C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B67FB31DFBE12E00892C47 /* Arbieye-test2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arbieye-test2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B67FB71DFBE12E00892C47 /* Arbieye_test2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arbieye_test2UITests.m; sourceTree = "<group>"; };
+		A0B67FB91DFBE12E00892C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B67FC61DFBE20100892C47 /* BebopVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BebopVideoView.m; sourceTree = "<group>"; };
+		A0B67FC91DFBE22500892C47 /* DeviceListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListVC.m; sourceTree = "<group>"; };
+		A0B67FCB1DFBE23800892C47 /* DeviceListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListVC.h; sourceTree = "<group>"; };
+		A0B67FCC1DFBE25200892C47 /* BebopVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BebopVideoView.h; sourceTree = "<group>"; };
+		A0B67FCE1DFBE29F00892C47 /* DroneDiscoverer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DroneDiscoverer.m; sourceTree = "<group>"; };
+		A0B67FD01DFBE2CC00892C47 /* DroneDiscoverer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DroneDiscoverer.h; sourceTree = "<group>"; };
+		A0B67FD11DFBE2ED00892C47 /* BebopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BebopVC.m; path = "/Users/morishi/Desktop/morishiX/code/Arbieye-test2/Arbieye-test2/BebopVC.m"; sourceTree = "<absolute>"; };
+		A0B67FD31DFBE2FB00892C47 /* BebopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BebopVC.h; sourceTree = "<group>"; };
+		A0B67FD51DFBE5AB00892C47 /* BebopDrone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BebopDrone.m; sourceTree = "<group>"; };
+		A0B67FD71DFBE5BE00892C47 /* BebopDrone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BebopDrone.h; sourceTree = "<group>"; };
+		A0B67FD81DFBE62900892C47 /* SDCardModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCardModule.m; sourceTree = "<group>"; };
+		A0B67FDA1DFBE63700892C47 /* SDCardModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCardModule.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0B67F8C1DFBE12E00892C47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B67FA51DFBE12E00892C47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B67FB01DFBE12E00892C47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0B67F861DFBE12E00892C47 = {
+			isa = PBXGroup;
+			children = (
+				A0B67F911DFBE12E00892C47 /* Arbieye-test2 */,
+				A0B67FAB1DFBE12E00892C47 /* Arbieye-test2Tests */,
+				A0B67FB61DFBE12E00892C47 /* Arbieye-test2UITests */,
+				A0B67F901DFBE12E00892C47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0B67F901DFBE12E00892C47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67F8F1DFBE12E00892C47 /* Arbieye-test2.app */,
+				A0B67FA81DFBE12E00892C47 /* Arbieye-test2Tests.xctest */,
+				A0B67FB31DFBE12E00892C47 /* Arbieye-test2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0B67F911DFBE12E00892C47 /* Arbieye-test2 */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67FD41DFBE59300892C47 /* Drones */,
+				A0B67FC81DFBE20800892C47 /* Views */,
+				A0B67FCD1DFBE27900892C47 /* Discoverer */,
+				A0B67FC51DFBE1C600892C47 /* ViewControllers */,
+				A0B67F951DFBE12E00892C47 /* AppDelegate.h */,
+				A0B67F961DFBE12E00892C47 /* AppDelegate.m */,
+				A0B67F981DFBE12E00892C47 /* ViewController.h */,
+				A0B67F991DFBE12E00892C47 /* ViewController.m */,
+				A0B67F9B1DFBE12E00892C47 /* Main.storyboard */,
+				A0B67F9E1DFBE12E00892C47 /* Assets.xcassets */,
+				A0B67FA01DFBE12E00892C47 /* LaunchScreen.storyboard */,
+				A0B67FA31DFBE12E00892C47 /* Info.plist */,
+				A0B67F921DFBE12E00892C47 /* Supporting Files */,
+			);
+			path = "Arbieye-test2";
+			sourceTree = "<group>";
+		};
+		A0B67F921DFBE12E00892C47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67F931DFBE12E00892C47 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0B67FAB1DFBE12E00892C47 /* Arbieye-test2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67FAC1DFBE12E00892C47 /* Arbieye_test2Tests.m */,
+				A0B67FAE1DFBE12E00892C47 /* Info.plist */,
+			);
+			path = "Arbieye-test2Tests";
+			sourceTree = "<group>";
+		};
+		A0B67FB61DFBE12E00892C47 /* Arbieye-test2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67FB71DFBE12E00892C47 /* Arbieye_test2UITests.m */,
+				A0B67FB91DFBE12E00892C47 /* Info.plist */,
+			);
+			path = "Arbieye-test2UITests";
+			sourceTree = "<group>";
+		};
+		A0B67FC51DFBE1C600892C47 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67FC91DFBE22500892C47 /* DeviceListVC.m */,
+				A0B67FCB1DFBE23800892C47 /* DeviceListVC.h */,
+				A0B67FD11DFBE2ED00892C47 /* BebopVC.m */,
+				A0B67FD31DFBE2FB00892C47 /* BebopVC.h */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A0B67FC81DFBE20800892C47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67FC61DFBE20100892C47 /* BebopVideoView.m */,
+				A0B67FCC1DFBE25200892C47 /* BebopVideoView.h */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A0B67FCD1DFBE27900892C47 /* Discoverer */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67FCE1DFBE29F00892C47 /* DroneDiscoverer.m */,
+				A0B67FD01DFBE2CC00892C47 /* DroneDiscoverer.h */,
+			);
+			name = Discoverer;
+			sourceTree = "<group>";
+		};
+		A0B67FD41DFBE59300892C47 /* Drones */ = {
+			isa = PBXGroup;
+			children = (
+				A0B67FD51DFBE5AB00892C47 /* BebopDrone.m */,
+				A0B67FD71DFBE5BE00892C47 /* BebopDrone.h */,
+				A0B67FD81DFBE62900892C47 /* SDCardModule.m */,
+				A0B67FDA1DFBE63700892C47 /* SDCardModule.h */,
+			);
+			name = Drones;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0B67F8E1DFBE12E00892C47 /* Arbieye-test2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B67FBC1DFBE12E00892C47 /* Build configuration list for PBXNativeTarget "Arbieye-test2" */;
+			buildPhases = (
+				A0B67F8B1DFBE12E00892C47 /* Sources */,
+				A0B67F8C1DFBE12E00892C47 /* Frameworks */,
+				A0B67F8D1DFBE12E00892C47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arbieye-test2";
+			productName = "Arbieye-test2";
+			productReference = A0B67F8F1DFBE12E00892C47 /* Arbieye-test2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0B67FA71DFBE12E00892C47 /* Arbieye-test2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B67FBF1DFBE12E00892C47 /* Build configuration list for PBXNativeTarget "Arbieye-test2Tests" */;
+			buildPhases = (
+				A0B67FA41DFBE12E00892C47 /* Sources */,
+				A0B67FA51DFBE12E00892C47 /* Frameworks */,
+				A0B67FA61DFBE12E00892C47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0B67FAA1DFBE12E00892C47 /* PBXTargetDependency */,
+			);
+			name = "Arbieye-test2Tests";
+			productName = "Arbieye-test2Tests";
+			productReference = A0B67FA81DFBE12E00892C47 /* Arbieye-test2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0B67FB21DFBE12E00892C47 /* Arbieye-test2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B67FC21DFBE12E00892C47 /* Build configuration list for PBXNativeTarget "Arbieye-test2UITests" */;
+			buildPhases = (
+				A0B67FAF1DFBE12E00892C47 /* Sources */,
+				A0B67FB01DFBE12E00892C47 /* Frameworks */,
+				A0B67FB11DFBE12E00892C47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0B67FB51DFBE12E00892C47 /* PBXTargetDependency */,
+			);
+			name = "Arbieye-test2UITests";
+			productName = "Arbieye-test2UITests";
+			productReference = A0B67FB31DFBE12E00892C47 /* Arbieye-test2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0B67F871DFBE12E00892C47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = morishi;
+				TargetAttributes = {
+					A0B67F8E1DFBE12E00892C47 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RHNH48U726;
+						ProvisioningStyle = Automatic;
+					};
+					A0B67FA71DFBE12E00892C47 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A0B67F8E1DFBE12E00892C47;
+					};
+					A0B67FB21DFBE12E00892C47 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A0B67F8E1DFBE12E00892C47;
+					};
+				};
+			};
+			buildConfigurationList = A0B67F8A1DFBE12E00892C47 /* Build configuration list for PBXProject "Arbieye-test2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0B67F861DFBE12E00892C47;
+			productRefGroup = A0B67F901DFBE12E00892C47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0B67F8E1DFBE12E00892C47 /* Arbieye-test2 */,
+				A0B67FA71DFBE12E00892C47 /* Arbieye-test2Tests */,
+				A0B67FB21DFBE12E00892C47 /* Arbieye-test2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0B67F8D1DFBE12E00892C47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B67FA21DFBE12E00892C47 /* LaunchScreen.storyboard in Resources */,
+				A0B67F9F1DFBE12E00892C47 /* Assets.xcassets in Resources */,
+				A0B67F9D1DFBE12E00892C47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B67FA61DFBE12E00892C47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B67FB11DFBE12E00892C47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0B67F8B1DFBE12E00892C47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B67FCF1DFBE29F00892C47 /* DroneDiscoverer.m in Sources */,
+				A0B67F9A1DFBE12E00892C47 /* ViewController.m in Sources */,
+				A0B67FC71DFBE20100892C47 /* BebopVideoView.m in Sources */,
+				A0B67FD91DFBE62900892C47 /* SDCardModule.m in Sources */,
+				A0B67F971DFBE12E00892C47 /* AppDelegate.m in Sources */,
+				A0B67FD21DFBE2ED00892C47 /* BebopVC.m in Sources */,
+				A0B67F941DFBE12E00892C47 /* main.m in Sources */,
+				A0B67FCA1DFBE22500892C47 /* DeviceListVC.m in Sources */,
+				A0B67FD61DFBE5AB00892C47 /* BebopDrone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B67FA41DFBE12E00892C47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B67FAD1DFBE12E00892C47 /* Arbieye_test2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B67FAF1DFBE12E00892C47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B67FB81DFBE12E00892C47 /* Arbieye_test2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0B67FAA1DFBE12E00892C47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B67F8E1DFBE12E00892C47 /* Arbieye-test2 */;
+			targetProxy = A0B67FA91DFBE12E00892C47 /* PBXContainerItemProxy */;
+		};
+		A0B67FB51DFBE12E00892C47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B67F8E1DFBE12E00892C47 /* Arbieye-test2 */;
+			targetProxy = A0B67FB41DFBE12E00892C47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0B67F9B1DFBE12E00892C47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0B67F9C1DFBE12E00892C47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0B67FA01DFBE12E00892C47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0B67FA11DFBE12E00892C47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0B67FBA1DFBE12E00892C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0B67FBB1DFBE12E00892C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0B67FBD1DFBE12E00892C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RHNH48U726;
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3/iOS-iphoneos/staging/usr/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3/iOS-iphonesimulator/staging/usr/include";
+				INFOPLIST_FILE = "Arbieye-test2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3/iOS-iphoneos/staging/usr/lib";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3/iOS-iphonesimulator/staging/usr/lib";
+				OTHER_LDFLAGS = (
+					"-larcommands",
+					"-larcontroller",
+					"-lardiscoverywithouteacc",
+					"-larnetwork",
+					"-larnetworkal",
+					"-larsal",
+					"-larstream",
+					"-larstream2",
+					"-larmavlink",
+					"-ljson",
+					"-larmedia",
+					"-larutils",
+					"-lcurl",
+					"-lardatatransfer",
+					"-lmux",
+					"-lpomp",
+					"-lcrypto",
+					"-lssl",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "morishi.Arbieye-test2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A0B67FBE1DFBE12E00892C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RHNH48U726;
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3/iOS-iphoneos/staging/usr/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3/iOS-iphonesimulator/staging/usr/include";
+				INFOPLIST_FILE = "Arbieye-test2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3/iOS-iphoneos/staging/usr/lib";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3/iOS-iphonesimulator/staging/usr/lib";
+				OTHER_LDFLAGS = (
+					"-larcommands",
+					"-larcontroller",
+					"-lardiscoverywithouteacc",
+					"-larnetwork",
+					"-larnetworkal",
+					"-larsal",
+					"-larstream",
+					"-larstream2",
+					"-larmavlink",
+					"-ljson",
+					"-larmedia",
+					"-larutils",
+					"-lcurl",
+					"-lardatatransfer",
+					"-lmux",
+					"-lpomp",
+					"-lcrypto",
+					"-lssl",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "morishi.Arbieye-test2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A0B67FC01DFBE12E00892C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Arbieye-test2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "morishi.Arbieye-test2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arbieye-test2.app/Arbieye-test2";
+			};
+			name = Debug;
+		};
+		A0B67FC11DFBE12E00892C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Arbieye-test2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "morishi.Arbieye-test2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arbieye-test2.app/Arbieye-test2";
+			};
+			name = Release;
+		};
+		A0B67FC31DFBE12E00892C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Arbieye-test2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "morishi.Arbieye-test2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Arbieye-test2";
+			};
+			name = Debug;
+		};
+		A0B67FC41DFBE12E00892C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Arbieye-test2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "morishi.Arbieye-test2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Arbieye-test2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0B67F8A1DFBE12E00892C47 /* Build configuration list for PBXProject "Arbieye-test2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B67FBA1DFBE12E00892C47 /* Debug */,
+				A0B67FBB1DFBE12E00892C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B67FBC1DFBE12E00892C47 /* Build configuration list for PBXNativeTarget "Arbieye-test2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B67FBD1DFBE12E00892C47 /* Debug */,
+				A0B67FBE1DFBE12E00892C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B67FBF1DFBE12E00892C47 /* Build configuration list for PBXNativeTarget "Arbieye-test2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B67FC01DFBE12E00892C47 /* Debug */,
+				A0B67FC11DFBE12E00892C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B67FC21DFBE12E00892C47 /* Build configuration list for PBXNativeTarget "Arbieye-test2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B67FC31DFBE12E00892C47 /* Debug */,
+				A0B67FC41DFBE12E00892C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0B67F871DFBE12E00892C47 /* Project object */;
+}
