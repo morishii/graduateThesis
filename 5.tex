@@ -1,0 +1,112 @@
+\chapter{実装}
+本章では，視点拡張システムのプロトタイプであるカメラワーク編集システム「Arbi-EYE」の実装について述べる．
+ついで，追尾モジュール，位置推定モジュール，視点移動モジュールの実装について説明する．
+
+% \section{使用センサデバイス}
+% 本節では，移動手段判定システムで使用する加速度センサについて説明する．
+% 本システムではスマートフォン上で移動手段を判定するため，スマートフォン上の加速度センサを利用する．
+% デバイスは，Android OSを搭載したスマートフォンであるGalaxy Nexus\cite{GalaxyNexus}（図\ref{GalaxyNexus}）を使用した．
+% Galaxy Nexusの仕様を表\ref{GalaxyNexus1}にまとめる．
+% \begin{figure}[htbp]
+%   \begin{center}
+%    \includegraphics[width=120mm]{image/5/Galaxy_Nexus.jpeg}
+%    \caption{Galaxy Nexus\cite{GalaxyNexus}}
+%    \label{GalaxyNexus}
+%   \end{center}
+% \end{figure}
+
+% \begin{table}[htbp]
+%  \begin{center}
+%  \caption{GalaxyNexusの仕様}
+%  \label{GalaxyNexus1}
+%   \begin{tabular}{c|c}
+%   \hline
+%    & 仕様 \\
+%   \hline
+%   OS & Android 4.2 \\
+%   サンプリング周波数 & 125Hz（最大） \\
+%   サイズ & 125mm × 68mm × 8.9mm \\
+%   重量 & 138g \\
+%   \hline
+%   \end{tabular}
+%  \end{center}
+% \end{table}
+
+% \section{加速度センサ取得モジュールの実装}
+% 本節では，加速度センサ取得モジュールの実装について説明する．
+% 加速度センサ取得モジュールはスマートフォン上の加速度センサから加速度データを取得するモジュールである．
+% 加速度データの取得には，AndroidのSensorManager\cite{SensorManager}を使用する．
+% Android上では表\ref{param}のように４種類のサンプリング周波数で加速度データを取得でき，
+% 端末によりサンプリング周波数の値が異なる．
+% Androidの加速度センサでは，サンプリング周波数を数値で指定することは出来ず，
+% この４種類のパラメータによって指定する．
+% \begin{table}[htbp]
+%  \begin{center}
+%   \caption{Android上でのサンプリング周波数のパラメータ}
+%   \label{param}
+%   \begin{tabular}{c|c}
+%   \hline
+%   パラメータ & 説明 \\
+%   \hline
+%   SENSOR\_DELAY\_FASTEST & 最速のサンプリング周波数 \\
+%   SENSOR\_DELAY\_GAME & ゲームに適したサンプリング周波数 \\
+%   SENSOR\_DELAY\_UI & UIに適したサンプリング周波数 \\
+%   SENSOR\_DELAY\_NORMAL & デフォルトのサンプリング周波数 \\
+%   \hline
+%   \end{tabular}
+%  \end{center}
+% \end{table}
+% 本システムではSENSOR\_DELAY\_FASTESTを用いて高速で加速度データを取得する．
+% なお，SENSOR\_DALAY\_FASTESTを用いると，Galaxy Nexusでは約125Hzで加速度データを取得できる．
+% AndroidのServiceを使用し，バックグラウンド上で加速度データを取得し続ける．
+% 加速度データが一定数溜まるごとに，移動手段を判定する．
+% 加速度センサ取得モジュールのソースコードをソースコード\ref{service}に示す．
+
+% \lstinputlisting[caption=TransferActivityService.java,label=service]{sourse/TransferActivityService.java}
+
+% \newpage
+
+% \section{移動手段判定モジュールの実装}
+% 本節では，移動手段判定モジュールの実装について説明する．
+% 移動手段判定モジュールは，特徴量の抽出と機械学習を用いた移動手段の判定に分けられる．
+
+% \subsection*{特徴量の抽出}
+% まず，特徴量抽出では表\ref{featurelist}に示した時系列分割と周波数分割の２つの特徴量を用いる．
+% 時系列分割では３軸加速度データから平均，二乗平均平方根，分散，相関係数，共分散を算出する．
+% 周波数分割では３軸加速度データから高速フーリエ変換(Fast Fourier Transform)をする．
+% 得られたフーリエ級数の実数部分と虚数部分の係数を２乗し，パワースペクトルを抽出する．
+% 特徴量計算のライブラリにApache Commons Math\cite{Commons_Math}を用いた．
+% 特徴量抽出のソースコードをソースコード\ref{FeatureExtractor}に示す．
+% \lstinputlisting[caption=FeatureExtractor.java,label=FeatureExtractor]{sourse/FeatureExtractor.java}
+
+% \newpage
+
+% \subsection*{機械学習を用いた移動手段の判定}
+% 機械学習を用いた移動手段の判定では，
+% 本システムに機械学習を組み込むためにWeka\cite{Weka}を使用した．
+% Wekaは機械学習ソフトウェアであり，データを与えると様々な機械学習アルゴリズムを切り替えて，
+% 結果を出力することが可能である．
+% 得られた特徴量をあらかじめ教師データとしてWekaにセットし，
+% リアルタイムに得られた加速度データから特徴量を抽出し，
+% Wekaを用いて機械学習により分類をし，移動手段を判定する．
+% 機械学習を用いた移動手段の判定のソースコードをソースコード\ref{classifier}に示す．
+% \lstinputlisting[caption=TransferActivityClassifier.java,label=classifier]{sourse/TransferActivityClassifier.java}
+
+
+% \newpage
+
+% \section{移動手段補正モジュールの実装}
+% 本節では，移動手段補正モジュールについて説明する．
+% 移動手段の最終判定を行う前に前後の移動手段を比較し，補正を行う．
+% 今，移動手段判定モジュールによって判定された移動手段をnowTransferとし，
+% 前に判定された移動手段をprevTransfer, 次に判定された移動手段をnextTransferとする．
+% もしprevTransferとnextTransferが同じで，nowTransferがprevTransferと違った場合には，
+% nowTransferをprevTransferに補正する．
+% 移動手段補正モジュールのソースコードをソースコード\ref{filter}に示す．
+
+% \lstinputlisting[caption=TransferActivityFilter.java,label=filter]{sourse/TransferActivityFilter.java}
+
+
+% \section{まとめ}
+% 本章では，加速度センサのみを用いた移動手段判定システムの実装について述べた．
+% 次章では，特徴量の選定と機械学習アルゴリズムの選定を目的とした予備実験について述べる．

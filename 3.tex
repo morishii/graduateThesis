@@ -1,0 +1,122 @@
+\chapter{視点拡張システム}
+本章では，第２章で示した問題意識から導き出した機能要件に対するアプローチを満たす移動手段判定システムを提案する．また，本システムの目的と特徴を述べる．
+
+% \section{本研究のアプローチ}
+% 本研究では，スマートフォンの加速度センサのみを用いて移動手段を判定するシステムを提案する．
+% 多様なユーザに移動手段判定を適用するために，機械学習を用いて複数のスマートフォンの所持位置に対応する．
+
+% \begin{figure}[tbp]
+% \begin{center}
+%  \begin{tabular}{cc}
+
+%   \begin{minipage}{0.5\hsize}
+%   \begin{center}
+%    \includegraphics[width=80mm]{graph/3/walk.pdf}
+%    \caption{歩行の加速度データ}
+%    \label{graph1}
+%   \end{center}
+%   \end{minipage}
+
+%   \begin{minipage}{0.5\hsize}
+%   \begin{center}
+%    \includegraphics[width=80mm]{graph/3/run.pdf}
+%    \caption{走行の加速度データ}
+%    \label{graph2}
+%   \end{center}
+%   \end{minipage}
+
+%  \end{tabular}
+% \end{center}
+% \end{figure}
+
+% \begin{figure}[htbp]
+% \begin{center}
+%  \begin{tabular}{cc}
+
+%   \begin{minipage}{0.5\hsize}
+%   \begin{center}
+%    \includegraphics[width=80mm]{graph/3/bicycle.pdf}
+%    \caption{自転車の加速度データ}
+%    \label{graph3}
+%   \end{center}
+%   \end{minipage}
+
+%   \begin{minipage}{0.5\hsize}
+%   \begin{center}
+%    \includegraphics[width=80mm]{graph/3/train.pdf}
+%    \caption{電車の加速度データ}
+%    \label{graph4}
+%   \end{center}
+%   \end{minipage}
+
+%  \end{tabular}
+% \end{center}
+% \end{figure}
+
+% \begin{figure}[htbp]
+% \begin{center}
+%  \begin{tabular}{cc}
+
+%   \begin{minipage}{0.5\hsize}
+%   \begin{center}
+%    \includegraphics[width=80mm]{graph/3/bus.pdf}
+%    \caption{バスの加速度データ}
+%    \label{graph5}
+%   \end{center}
+%   \end{minipage}
+
+%   \begin{minipage}{0.5\hsize}
+%   \begin{center}
+%    \includegraphics[width=80mm]{graph/3/car.pdf}
+%    \caption{自動車の加速度データ}
+%    \label{graph6}
+%   \end{center}
+%   \end{minipage}
+
+%  \end{tabular}
+% \end{center}
+% \end{figure}
+
+% \begin{figure}[htbp]
+%   \begin{center}
+%    \includegraphics[width=80mm]{graph/3/other.pdf}
+%    \caption{静止の加速度データ}
+%    \label{graph7}
+%   \end{center}
+% \end{figure}
+
+% ７種類の移動手段（歩行，走行，自転車，電車，バス，自動車，静止）の加速度データを図\ref{graph1}-\ref{graph7}に示す．
+% 歩行時や走行時，自転車は加速度の変化が大きく，周期的なグラフになっている．
+% 走行時は歩行時に比べ，加速度の変化が大きく，周期の間隔も短い．
+% 逆に，電車やバス，自動車，静止時は加速度の変化が小さいが，
+% わずかながら違いがある．
+% 静止時はグラフがほぼ一直線であるが，電車やバス，自動車ではわずかに加速度が変化している．
+% このように各移動手段ごとにグラフを比較してみるだけでも違いが見てとれる．
+% よって加速度センサのみでも移動手段の判定をすることが出来るであろうと考えられる．
+
+% \clearpage
+
+% \section{本システムの特徴}
+% 本システムは，既存研究や既存のシステムが課題とする，
+% GPSを用いていることによりあらゆる場所で使用することが出来ない問題や，
+% 複数センサを併用していることによる消費電力増大の問題，
+% スマートフォンの所持位置にが限定されているという問題を解決し，
+% 長時間．あらゆる場所でスマートフォンの所持位置にとらわれずに使用できる移動手段判定システムを実現する．
+
+% 本システムの特徴は，GPSやマイク，角速度センサなど複数のセンサを使用せずに，
+% 加速度センサのみを使用することであらゆる場所で使用でき，省電力で移動手段を判定することが出来る．
+% また，スマートフォンの所持位置にとらわれずに移動手段を判定できるため簡便性が向上する．
+% そして，本システムはスマートフォン上で動作をし，逐次に判定できるリアルタイム性である．
+% これにより本システムは，ユーザが任意の場所に所持するスマートフォン上で，
+% その省電力性により長時間にわたってリアルタイムにユーザの移動手段を判定することが出来る．
+% したがって，ユーザは本システムの機能を利用したスマートフォン上のアプリケーションを継続的に利用できる．
+
+% 本システムは，ユーザのスマートフォン上で動作し，
+% 加速度センサのデータを入力し，一定時間ごとに現在の移動手段を判定し出力する．
+% 本システムが判定する移動手段は，小林，岩本，西山らの先行研究を参考にし，
+% 「歩行，走行，自転車，電車，バス，自動車，その他（移動していない状態を含む）」の７種類とする．
+
+% \section{まとめ}
+% 本章では，導き出した問題意識に対する本研究のアプローチを示した．
+% また，アプローチを満たす移動手段判定システムを提案し，本システムの目的と特徴を述べた．
+% 次章では，本システムの設計について述べる．
